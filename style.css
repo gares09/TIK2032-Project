@@ -1,24 +1,87 @@
 body {
     font-family: Arial, sans-serif;
+    color: white;
     text-align: center;
+    background-color: #1e1e2f;
+    padding: 0;
+    margin: 0;
 }
+
+nav {
+    background-color: #09122c;
+    padding: 10px;
+}
+
 nav a {
+    color: white;              
+    text-decoration: none;     
     margin: 0 15px;
-    text-decoration: none;
-    color: rgb(135, 135, 247);
+    font-weight: bold;
 }
+
+
+nav a:hover {
+    color: #00bcd4;          
+}
+
+
 .container {
     max-width: 800px;
-    margin: auto;
+    margin: 10px;
 }
 .logo {
     display: block;
-    margin-top: 20px; /* Jarak dari navigasi */
-    margin-left: auto;
-    margin-right: auto;
-    height: 80px; /* Sesuaikan ukuran */
+    margin: 20px;
+    height: 80px;
 }
-.container img {
-    display: block;
-    margin-bottom: 20px; /* Jarak antara gambar */
+.container-image{
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman';
+    text-align: center;
+}
+.grid-img {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the grid */
+}
+
+.grid-item {
+    background-color: #16213e; /* Dark card background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px; /* Inner padding */
+    text-align: center; /* Center text */
+}
+
+.grid-item img {
+    width: 100%; /* Responsive image */
+    border-radius: 8px; /* Rounded image corners */
+}
+  
+.welcome-banner {
+    font-family: 'Times New Roman';
+    padding: 40px 20px; 
+    background-color: #17153b;
+    width: 100%;
+    margin: 0; 
+    box-sizing: border-box; 
+    text-align: center;
+}
+
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
 }
